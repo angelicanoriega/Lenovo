@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Gota;
+    src: url('./Gotham\ OpenType/@font-face') ;
+}
+*{
+    font-family: Gota;
+    margin: 0;
+}
+
+.spaceModal{
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+}
+.modalBody{
+    width: 90%;
+    height: 80%;
+    background: white;
+}
