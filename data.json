@@ -1,0 +1,14 @@
+{
+    "notebook": {
+        "ideapad320": {
+          "80XH01WRLM":{
+            "foto":"https://drive.google.com/open?id=1XIsiqtPWAKELZtLNibpDE9cTeeJQVOFX",
+            "espe":""
+
+          },
+          "pn2": { "ghopper": true },
+        },
+        "ghopper": { ... },
+        "eclarke": { ... }
+      }
+}
