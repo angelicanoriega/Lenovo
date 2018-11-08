@@ -43,8 +43,7 @@ const search = (user) => {
               if (arraySearchelement === user) {
                 firebase.database().ref(elementfirstKey).child(elementSecondKey).child(arraySearchelement).on("value", snap => {
                   console.log(arraySearchelement);
-                  document.getElementById('tablaPar')='';
-
+                  document.getElementById('tablaPar').innerHTML='';
                   paintData(snap.val().foto, snap.val().pdf, arraySearchelement, snap.val()['img-pdf'], document.getElementById('imagen'), document.getElementById('descarga'), document.getElementById('tablaPar'));
                 })
               }

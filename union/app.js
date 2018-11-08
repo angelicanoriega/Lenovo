@@ -22,10 +22,8 @@ const paintData = (parNumberimg,parNumberpdf, parNumber,pdfimage,modalImg,modalp
     divCard.appendChild(title);
     divCard.appendChild(a);
     html.appendChild(divColum); 
-    console.log(pdfimage);
     
     a.addEventListener('click',()=>{
-        console.log(parNumberpdf);
         modalp.setAttribute('href', parNumberpdf);
         modalImg.setAttribute('src',pdfimage)
     })
@@ -53,7 +51,8 @@ const paint = (imgModelo, modelo, html ,valor) => {
     html.appendChild(divColum);
 
     a.addEventListener('click',()=>{
-        console.log(title.innerHTML);
+        document.getElementById('tablaPar').innerHTML='';
+
         firebase.database().ref(valor).child(title.innerHTML).on("value", snap => {
             const KeyparNumber=Object.keys(snap.val());
             KeyparNumber.forEach(elementparNumber => {
@@ -82,16 +81,16 @@ const btnTablets=document.getElementById('tablets');
 const btnAio=document.getElementById('aio');
  
 btnNotebook.addEventListener('click',()=>{
-    console.log(btnNotebook.id);
-    btnValues(btnNotebook.id)
+    document.getElementById('tabla').innerHTML='';
+        btnValues(btnNotebook.id)
 });
 btnTablets.addEventListener('click',()=>{
-    console.log(btnTablets.id);
+    document.getElementById('tabla').innerHTML='';
     btnValues(btnTablets.id)
 
 });
 btnAio.addEventListener('click',()=>{
-    console.log(btnAio.id);
+    document.getElementById('tabla').innerHTML='';
     btnValues(btnAio.id)
 
 })
