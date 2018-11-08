@@ -75,9 +75,9 @@ const btnValues = (valor) => {
     const obj={
         valor:''
     }
-        const imgD = 'https://raw.githubusercontent.com/OshinVillegas/Lenovo/gh-pages/mi%20data/notebook/ideapad520/81BF004WLM/02_Ideapad_520_15inch_Hero_Front_facing_right_Multi-tasking_Bronzere.jpg';
-        const imgT='https://lh3.googleusercontent.com/amFb9AYy-InFFPQzfjZxltYiwkOSVUDSNjoVJbhA0VR2KrTMgKZOZhz4kLmv37GWiwGjZ_I8PMdj1GiG2b31=w908-h577-rw';
-        const imgAio='https://lh4.googleusercontent.com/yJ1ggL0SGnaG0he4X3UVe5JaUB9qbT3EtRr_mtnB2cbayn26cla2Bz4fGgxBz3ucBN5AWsDaNqk5g0KtH8Da=w1366-h626-rw';
+        const imgD = 'https://github.com/OshinVillegas/Lenovo/blob/gh-pages/union/fotos%20para%20descarga/notebook/ideapad720s/81BD001KLM/03_IDEAPAD_720S_13INCH_Hero_Shot_Left_Web_browser_Champagne%20Gold.png?raw=true';
+        const imgT='https://github.com/OshinVillegas/Lenovo/blob/gh-pages/union/fotos%20para%20descarga/tablets/tap%207%20essential/za300129PE/tablet-lenovo-tab-7-essential-7-ips-touch-1024x768-andr-D_NQ_NP_623582-MPE28183047610_092018-F.jpg?raw=true';
+        const imgAio='https://github.com/OshinVillegas/Lenovo/blob/gh-pages/union/fotos%20para%20descarga/aio/ideacentre520/F0D4001DLD/01_AIO_520_Hero_with_KB_and_Mouse_Front_forward_facing.png?raw=true';
     if(valor==='tablets'){
         obj.valor=imgT;
     }
