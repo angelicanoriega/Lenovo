@@ -1,16 +1,25 @@
-.slider {
+body{
   background: url(https://github.com/OshinVillegas/Lenovo/blob/gh-pages/union/images/Blue-Dots.jpg?raw=true);
+}
+.btn{
+  background:#E2231A;
+}
+.slider {
+ 
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-
+#filtro{
+  margin-left: 75%;
+padding-bottom: 20%;
+}
 input {
   width: 100%;
   max-width: 1000px;
 }
 p{
-  color: #ffffff; 
+  color: #E1140A;
   font-size: 1.3rem;
 
 }
