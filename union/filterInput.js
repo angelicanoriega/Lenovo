@@ -16,7 +16,7 @@ const painSearch = (parNumberimg, parNumberimgList,parNumberpdf, parNumber, pdfi
   const h5 = document.createElement('h5');
   a.appendChild(h5);
   title.innerHTML = parNumber;
-  h5.innerHTML = 'click';
+  h5.innerHTML = 'Ver';
   divColum.appendChild(divCard);
   divCard.appendChild(img);
   divCard.appendChild(title);
