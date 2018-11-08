@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +27,16 @@
     })(window, document);
   </script>
 </head>
+
 <body>
   <header>
-    <div class="container-fluid fixed-top logo">
+    <div class="container-fluid fixed-top logo firtsSee">
       <img class="logo" src="./images/Branding_lenovo-logo_lenovologoposred_low_res.png" />
+    </div>
+  </header>
+  <header>
+    <div class="container-fluid fixed-top logo see">
+      <img class="logo" src="./images/logoresponsive.png" />
     </div>
   </header>
   <section id="first">
@@ -40,28 +47,31 @@
           </div>
         </div>
         <div class="col-md-12  pt-3 pb-4">
-          <h1 class="slogan">Different Search Better</h1>
+          <h1 class="slogan">Catálogo de productos</h1>
         </div>
         <div class="col-md-12 ">
           <div class="row">
             <div class="col-md-12 text-center pb-3">
-              <h1 class="icon text-whh1te fas fa-search p-3 "></h1>
+              <h1 id="lup-icon" class="icon  fas fa-search p-3"></h1>
             </div>
           </div>
-          <div class="col-md-12 ">
+          <div id="form" class="col-md-12 hidden">
             <div class="input-group mb-3 d-flex justify-content-center align-items-center">
+              <div class="input-group-prepend" id="saveSearch">
+                <span class="input-group-text"><a class="fas fa-chevron-right p-1"></a></span>
+              </div>
               <input type="text" id="equipment-search" class="form-control" placeholder="Por NP o modelo" />
-              <div class="input-group-prepend">
-                <span class="input-group-text"><a id="btn-search" class="fas fa-search p-1"></a></span>
+              <div class="input-group-prepend" id="btn-search">
+                <span class="input-group-text"><a class="fas fa-search p-1"></a></span>
               </div>
             </div>
           </div>
           <div class="col-md-12 pt-3">
             <div class="row">
-              <div class="col-6 col-md-4 text-center">
+              <div class="col-12 col-md-4 text-center">
                 <div class="svg-category">
-                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="40" width="150" />
+                  <svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="60" width="200" />
                     <div id="text">
                       <a href="#">
                         <span id="notebook" class="spot"></span>
@@ -71,10 +81,10 @@
                   </svg>
                 </div>
               </div>
-              <div class="col-6 col-md-4 text-center">
+              <div class="col-12 col-md-4 text-center pt-3">
                 <div class="svg-category">
-                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="40" width="150" />
+                  <svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="60" width="200" />
                     <div id="text">
                       <a href="#">
                         <span id="tablets" class="spot"></span>
@@ -84,10 +94,10 @@
                   </svg>
                 </div>
               </div>
-              <div class="col-md-4 text-center">
+              <div class="col-md-4 text-center pt-3 pb-5">
                 <div class="svg-category">
-                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="40" width="150" />
+                  <svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="60" width="200" />
                     <div id="text">
                       <a href="#">
                         <span id="aio" class="spot display-3"></span>
@@ -130,7 +140,7 @@
       <div class="row">
         <div class="col-md-12">
           <div>
-            <h1 class="slogan text-center p-3 text-white">Par Number</h1>
+            <h1 class="slogan text-center p-3 text-white">Part Number</h1>
           </div>
           <div class="col-md-12">
             <div id="tablaPar" class="row cuadro d-flex justify-content-center align-items-center text-center ">
@@ -148,10 +158,18 @@
       aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content d-flex justify-content-center align-items-center text-center">
-          <a id="descarga" target="-blank" class=" text-dark display-4 fas fa-cloud-download-alt" download>
-            <h5>Descargar</h3>
-          </a>
-          <img id='imagen' alt="" class="img-fluid" alt="Responsive image"> </div>
+          <div class="row pt-3">
+            <div class="col-6 col-md-6"> <a id="descarga" target="-blank" class=" text-dark tamaño fas fa-cloud-download-alt"
+                download>
+                <h5>Descargar PDF</h3>
+              </a></div>
+            <div class="col-6 col-md-6"> <a id="descargaimg" target="-blank" class=" text-dark tamaño fas fa-cloud-download-alt"
+                download>
+                <h5>Descargar imagenes</h3>
+              </a></div>
+          </div>
+          <img id='imagen' alt="error" class="img-fluid" alt="Responsive image">
+        </div>
       </div>
     </div>
   </section>
@@ -177,4 +195,5 @@
   crossorigin="anonymous"></script>
 <script src="./app.js"></script>
 <script src="./filterInput.js"></script>
+
 </html>

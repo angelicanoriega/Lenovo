@@ -1,8 +1,24 @@
+.tamaño h5{
+  font-family: 'gotham';
+  text-align: center;
+  font-weight: 100;
+
+}
+#lup-icon{
+  cursor: pointer;
+}
+#saveSearch{
+  cursor: pointer;
+}
+.tamaño{
+  font-size: 30px;
+}
+
 .btn{
   background:#E2231A;
 }
 .slider {
-  background: url(https://images4.alphacoders.com/234/thumb-1920-234178.jpg);
+  background: url(https://raw.githubusercontent.com/OshinVillegas/Lenovo/gh-pages/union/images/Blue-Dots.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -52,7 +68,7 @@ p{
 .slogan {
   color: #ffffff;
   font-family: 'gotham';
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-align: center
 }
 .searcher{
@@ -99,7 +115,7 @@ p{
     color: #E1140A;
   }
   #text {
-    margin-top: -35px;
+    margin-top: -55px;
     text-align: center;
   }
   
@@ -138,4 +154,20 @@ p{
   color:white;
  font-size: 500%;
  text-align: center;
+}
+.firtsSee{
+  display: block;
+}
+.see{
+  display: none;
+}
+@media(max-width:700px){
+
+
+  .firtsSee{
+    display: none;
+  }
+  .see{
+    display: block;
+  }
 }
