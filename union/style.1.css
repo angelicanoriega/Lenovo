@@ -1,14 +1,35 @@
-body{
-  background: url(https://github.com/OshinVillegas/Lenovo/blob/gh-pages/union/images/Blue-Dots.jpg?raw=true);
-}
 .btn{
   background:#E2231A;
 }
 .slider {
- 
+  background: url(https://images4.alphacoders.com/234/thumb-1920-234178.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+.hidden{
+  display: none;
+}
+.cuadro{
+  width: 100%;
+  height: 345px;
+  overflow: auto;
+}
+#returnsecond{
+  color: white;
+  border-radius:50%; 
+}
+#returnsecond:hover{
+  color:white;
+  border: 2px solid white;
+}
+#returnspecifit{
+  color: white;
+  border-radius:50%; 
+}
+#returnspecifit:hover{
+  color:white;
+  border: 2px solid white;
 }
 #filtro{
   margin-left: 75%;
@@ -27,16 +48,13 @@ input {
 p{
   color: #E1140A;
   font-size: 1.3rem;
-
 }
 .slogan {
   color: #ffffff;
   font-family: 'gotham';
-  font-size: 100%;
+  font-size: 3.5rem;
   text-align: center
-
 }
-
 .searcher{
   text-align: center; 
   }
@@ -48,7 +66,6 @@ p{
     height: 100%;
     top: 0;
     left: 0;
-
   }
   
   .svg-category {
@@ -70,7 +87,17 @@ p{
     stroke-dashoffset: -220;
     transition: 1s all ease;
   }
-  
+  .icon{
+    border: 3px solid #E1140A;
+    border-radius:50%;
+    color: white ;
+  }
+  .icon:hover{
+    border: 3px solid white;
+    background: white;
+    border-radius:50%;
+    color: #E1140A;
+  }
   #text {
     margin-top: -35px;
     text-align: center;
@@ -80,7 +107,7 @@ p{
     color: white;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 2em;
   }
   
   
@@ -95,11 +122,9 @@ p{
   top: 0;
   left: 0;
 }
-
 .form-control {
   border-radius: 10px;
 }
-
 @font-face {
   font-family: 'gotham';
   src: url(./typography/Gotham-Bold.otf);

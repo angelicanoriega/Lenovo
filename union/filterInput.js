@@ -22,7 +22,6 @@ const painSearch = (parNumberimg, parNumberpdf, parNumber, pdfimage, modalImg, m
   divCard.appendChild(title);
   divCard.appendChild(a);
   html.appendChild(divColum);
-
   a.addEventListener('click', () => {
     modalp.setAttribute('href', parNumberpdf);
     modalImg.setAttribute('src', pdfimage)
@@ -30,6 +29,7 @@ const painSearch = (parNumberimg, parNumberpdf, parNumber, pdfimage, modalImg, m
 }
 const userSearch = document.getElementById('equipment-search');
 const btnUserSearch = document.getElementById('btn-search');
+const returnspecifit=document.getElementById('returnspecifit');
 const search = (user) => {
   firebase.database().ref().on("value", snap => {
     let firstKey = Object.keys(snap.val());
@@ -43,8 +43,7 @@ const search = (user) => {
               if (arraySearchelement === user) {
                 firebase.database().ref(elementfirstKey).child(elementSecondKey).child(arraySearchelement).on("value", snap => {
                   console.log(arraySearchelement);
-                  document.getElementById('tablaPar')='';
-
+                  document.getElementById('tablaPar').innerHTML='';
                   paintData(snap.val().foto, snap.val().pdf, arraySearchelement, snap.val()['img-pdf'], document.getElementById('imagen'), document.getElementById('descarga'), document.getElementById('tablaPar'));
                 })
               }
@@ -56,5 +55,13 @@ const search = (user) => {
   })
 }
 btnUserSearch.addEventListener('click', () => {
+  document.getElementById('first').setAttribute('class', 'hidden');
+  document.getElementById('second').setAttribute('class', 'hidden');
+  document.getElementById('thrid').removeAttribute('class');
   search(userSearch.value)
+})
+returnspecifit.addEventListener('click', () => {
+  document.getElementById('first').removeAttribute('class');
+  document.getElementById('second').setAttribute('class', 'hidden');
+  document.getElementById('thrid').setAttribute('class', 'hidden');
 })
