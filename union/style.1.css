@@ -4,7 +4,9 @@
   background-position: center;
   height: 100vh;
 }
-
+#btn-search{
+  cursor: pointer;
+}
 input {
   width: 100%;
   max-width: 1000px;
