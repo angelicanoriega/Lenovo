@@ -1,4 +1,6 @@
-const paintData = (parNumberimg, parNumberpdf, parNumber, pdfimage, modalImg, modalp, html) => {
+
+
+const paintData = (parNumberimg,parNumberimgList, parNumberpdf, parNumber, pdfimage, modalImg, modalp,modalpimg, html) => {
     const divColum = document.createElement('div');
     divColum.setAttribute('class', 'col-md-4');
     divColum.setAttribute('value', parNumberpdf);
@@ -21,10 +23,13 @@ const paintData = (parNumberimg, parNumberpdf, parNumber, pdfimage, modalImg, mo
     divCard.appendChild(img);
     divCard.appendChild(title);
     divCard.appendChild(a);
+    console.log(html);
+
     html.appendChild(divColum);
     a.addEventListener('click', () => {
         modalp.setAttribute('href', parNumberpdf);
         modalImg.setAttribute('src', pdfimage)
+        modalpimg.setAttribute('href',parNumberimgList);
     })
 }
 const paint = (imgModelo, modelo, html, valor) => {
@@ -38,7 +43,7 @@ const paint = (imgModelo, modelo, html, valor) => {
     img.setAttribute('alt', modelo);
     const title = document.createElement('h3');
     const a = document.createElement('a');
-    a.setAttribute('class', 'btn btn-primary mt-3 mb-3 text-white');
+    a.setAttribute('class', 'bg-danger p-2 text-white');
     const h5 = document.createElement('h5');
     a.appendChild(h5);
     title.innerHTML = modelo;
@@ -57,8 +62,10 @@ const paint = (imgModelo, modelo, html, valor) => {
         firebase.database().ref(valor).child(title.innerHTML).on("value", snap => {
             const KeyparNumber = Object.keys(snap.val());
             KeyparNumber.forEach(elementparNumber => {
+
                 firebase.database().ref(valor).child(title.innerHTML).child(elementparNumber).on("value", snap => {
-                    paintData(snap.val().foto, snap.val().pdf, elementparNumber, snap.val()['img-pdf'], document.getElementById('imagen'), document.getElementById('descarga'), document.getElementById('tablaPar'));
+                    
+                    paintData(snap.val().foto,snap.val().imgs, snap.val().pdf, elementparNumber, snap.val()['img-pdf'], document.getElementById('imagen'), document.getElementById('descarga'), document.getElementById('descargaimg'), document.getElementById('tablaPar'));
                 })
             });
         })
@@ -101,4 +108,19 @@ returnsecond.addEventListener('click', () => {
     document.getElementById('first').removeAttribute('class');
     document.getElementById('second').setAttribute('class', 'hidden');
     document.getElementById('thrid').setAttribute('class', 'hidden');
+})
+const lupIcon=document.getElementById('lup-icon');
+const saveSearch=document.getElementById('saveSearch');
+const form=document.getElementById('form');
+
+lupIcon.addEventListener('click',()=>{
+    lupIcon.setAttribute('class','hidden');
+    form.removeAttribute('class');
+    form.setAttribute('class','col-md-12');
+})
+saveSearch.addEventListener('click',()=>{
+    lupIcon.removeAttribute('class');
+    lupIcon.setAttribute('class','icon  fas fa-search p-3');
+    form.setAttribute('class','hidden');
+
 })

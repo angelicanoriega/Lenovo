@@ -21,6 +21,8 @@ const painSearch = (parNumberimg, parNumberpdf, parNumber, pdfimage, modalImg, m
   divCard.appendChild(img);
   divCard.appendChild(title);
   divCard.appendChild(a);
+  console.log(html);
+  
   html.appendChild(divColum);
   a.addEventListener('click', () => {
     modalp.setAttribute('href', parNumberpdf);
@@ -44,6 +46,11 @@ const search = (user) => {
                 firebase.database().ref(elementfirstKey).child(elementSecondKey).child(arraySearchelement).on("value", snap => {
                   console.log(arraySearchelement);
                   document.getElementById('tablaPar').innerHTML='';
+                  paintData(snap.val().foto, snap.val().pdf, arraySearchelement, snap.val()['img-pdf'], document.getElementById('imagen'), document.getElementById('descarga'), document.getElementById('tablaPar'));
+                })
+              }
+              else{                  
+                firebase.database().ref(elementfirstKey).child(elementSecondKey).child(arraySearchelement).on("value", snap => {
                   paintData(snap.val().foto, snap.val().pdf, arraySearchelement, snap.val()['img-pdf'], document.getElementById('imagen'), document.getElementById('descarga'), document.getElementById('tablaPar'));
                 })
               }
