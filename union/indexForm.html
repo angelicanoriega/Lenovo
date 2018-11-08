@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.1.css" />
+    <title>Document</title>
+    <script type="text/javascript">(function(t,e){var r=function(t){try{var r=e.head||e.getElementsByTagName("head")[0];a=e.createElement("script");a.setAttribute("type","text/javascript");a.setAttribute("src",t);r.appendChild(a);}catch(t){}};t.CollectId = "5be3792f692c6d16f43c6924";r("https://collectcdn.com/launcher.js");})(window,document);</script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid fixed-top logo">
+
+            <img class="logo" src="./images/Branding_lenovo-logo_lenovologoposred_low_res.png" />
+
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="container-fluid slider  d-flex justify-content-center align-items-center text-center">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <!-- <form id="filtro" class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Filtrar por producto"
+                                aria-label="Search">
+                            <button class="btn btn my-2 my-sm-0" type="submit">Search</button>
+                        </form> -->
+
+                    </div>
+                </div>
+                
+                <div class="col-md-12 pt-3">
+                    <div class="row">
+                        <div class="col-6 col-md-4 text-center">
+                            <div class="svg-category">
+                                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect id="shape" height="40" width="150" />
+                                    <div id="text">
+                                        <a href="#">
+                                            <span id="notebook" class="spot"></span>
+                                            Notebooks
+                                        </a>
+                                    </div>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 text-center">
+                            <div class="svg-category">
+                                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect id="shape" height="40" width="150" />
+                                    <div id="text">
+                                        <a href="#">
+                                            <span id="tablets" class="spot"></span>
+                                            Tablets
+                                        </a>
+                                    </div>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="svg-category">
+                                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect id="shape" height="40" width="150" />
+                                    <div id="text">
+                                        <a href="#">
+                                            <span id="aio" class="spot"></span>
+                                            All in one
+                                        </a>
+                                    </div>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid slider d-flex justify-content-center align-items-center text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="tabla" class="row ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid slider d-flex justify-content-center align-items-center text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="tablaPar" class="row ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section> <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+        <!-- Large modal -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content d-flex justify-content-center align-items-center text-center">
+                    <a id="descarga" target="-blank" class=" text-dark display-4 fas fa-cloud-download-alt" download>
+                        <h5>Descargar</h3>
+                    </a>
+                    <img id='imagen' alt="" class="img-fluid" alt="Responsive image"> </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCckFgExQsioN-y1MD1t5IDHUYBcr48BoM",
+        authDomain: "lenovo-56c15.firebaseapp.com",
+        databaseURL: "https://lenovo-56c15.firebaseio.com",
+        projectId: "lenovo-56c15",
+        storageBucket: "lenovo-56c15.appspot.com",
+        messagingSenderId: "692143922468"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+<script src="./filterBtn.js"></script>
+
+</html>
