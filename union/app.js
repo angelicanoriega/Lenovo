@@ -23,7 +23,6 @@ const paintData = (parNumberimg,parNumberimgList, parNumberpdf, parNumber, pdfim
     divCard.appendChild(img);
     divCard.appendChild(title);
     divCard.appendChild(a);
-    console.log(html);
 
     html.appendChild(divColum);
     a.addEventListener('click', () => {
