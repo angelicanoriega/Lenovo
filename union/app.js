@@ -72,12 +72,26 @@ const paint = (imgModelo, modelo, html, valor) => {
     })
 }
 const btnValues = (valor) => {
-    const notebook = firebase.database().ref(valor);
-    const img = 'https://raw.githubusercontent.com/OshinVillegas/Lenovo/gh-pages/mi%20data/notebook/ideapad520/81BF004WLM/02_Ideapad_520_15inch_Hero_Front_facing_right_Multi-tasking_Bronzere.jpg';
+    const obj={
+        valor:''
+    }
+        const imgD = 'https://raw.githubusercontent.com/OshinVillegas/Lenovo/gh-pages/mi%20data/notebook/ideapad520/81BF004WLM/02_Ideapad_520_15inch_Hero_Front_facing_right_Multi-tasking_Bronzere.jpg';
+        const imgT='https://lh3.googleusercontent.com/amFb9AYy-InFFPQzfjZxltYiwkOSVUDSNjoVJbhA0VR2KrTMgKZOZhz4kLmv37GWiwGjZ_I8PMdj1GiG2b31=w908-h577-rw';
+        const imgAio='https://lh4.googleusercontent.com/yJ1ggL0SGnaG0he4X3UVe5JaUB9qbT3EtRr_mtnB2cbayn26cla2Bz4fGgxBz3ucBN5AWsDaNqk5g0KtH8Da=w1366-h626-rw';
+    if(valor==='tablets'){
+        obj.valor=imgT;
+    }
+    else if(valor==='aio'){
+        obj.valor=imgAio;
+    }
+    else if(valor==='notebook'){
+        obj.valor=imgD;
+    }
+        const notebook = firebase.database().ref(valor);
     notebook.on("value", snap => {
         const key = Object.keys(snap.val());
         key.forEach(elementKey => {
-            paint(img, elementKey, document.getElementById('tabla'), valor);
+            paint(obj.valor, elementKey, document.getElementById('tabla'), valor);
         });
     })
 }
