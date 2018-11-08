@@ -60,10 +60,7 @@ const paint = (imgModelo, modelo, html) => {
                 firebase.database().ref("notebook").child(title.innerHTML).child(elementparNumber).on("value", snap => {
                     paintData(snap.val().foto,snap.val().pdf, elementparNumber,snap.val()['img-pdf'],document.getElementById('imagen'),document.getElementById('descarga'), document.getElementById('tablaPar'));
                 })
-                
-                
             });
-            
         })
     })
 }
