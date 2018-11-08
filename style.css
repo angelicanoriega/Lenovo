@@ -2,11 +2,19 @@
     font-family: Gota;
     src: url('./Gotham\ OpenType/@font-face') ;
 }
-*{
-    font-family: Gota;
-    margin: 0;
+.slider {
+    background: url(https://raw.githubusercontent.com/angelicanoriega/portafolio/master/imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+.card{
+    width: 18rem;
+}
+a{
+    text-decoration: none;
 
+}
 .spaceModal{
     position: absolute;
     background:rgba(0, 0, 0, 0.5);
@@ -15,7 +23,7 @@
     height: 100vh;
 }
 .modalBody{
-    width: 90%;
+    width: 30%;
     height: 80%;
     background: white;
 }
