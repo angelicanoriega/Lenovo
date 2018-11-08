@@ -7,9 +7,13 @@
 
 input {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
 }
+p{
+  color: #ffffff; 
+  font-size: 1.3rem;
 
+}
 .slogan {
   color: #ffffff;
   font-family: 'gotham';
