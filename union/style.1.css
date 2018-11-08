@@ -163,9 +163,7 @@ p{
 }
 @media(max-width:700px){
 
-  .slider{
-    height: 100%;
-  }
+
   .firtsSee{
     display: none;
   }
