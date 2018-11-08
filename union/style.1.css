@@ -17,6 +17,9 @@ margin-bottom: 100%;
 .logo{
   padding-top:-10% ;
 }
+#btn-search{
+  cursor: pointer;
+}
 input {
   width: 100%;
   max-width: 1000px;
