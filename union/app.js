@@ -43,7 +43,7 @@ const paint = (imgModelo, modelo, html, valor) => {
     img.setAttribute('alt', modelo);
     const title = document.createElement('h3');
     const a = document.createElement('a');
-    a.setAttribute('class', 'bg-danger p-2 text-white');
+    a.setAttribute('class', 'bg-danger p-2  text-white');
     const h5 = document.createElement('h5');
     a.appendChild(h5);
     title.innerHTML = modelo;
