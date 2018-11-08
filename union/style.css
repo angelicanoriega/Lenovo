@@ -30,3 +30,7 @@ a{
 .card{
     background: black;
 }
+body{
+    background: url("http://www.pc-campos.com/wp-content/uploads/2016/12/lenovo-pccampos-e1497945128401.jpg");
+    background-size: cover;
+}
