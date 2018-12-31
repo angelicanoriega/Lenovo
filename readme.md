@@ -17,4 +17,8 @@ y la posibilidad de mejora constante.
 
 
 [Prototipo de alta](https://www.figma.com/file/ERcYJbv4Oh9jRO15W8UiAKYS/Untitled?node-id=1%3A16)
+![img-inicio-1](https://raw.githubusercontent.com/angelicanoriega/Lenovo/master/imgreadme/splast.PNG)
+![img-inicio-2](https://raw.githubusercontent.com/angelicanoriega/Lenovo/master/imgreadme/inicio.PNG)
+
+
 
